@@ -1,0 +1,171 @@
+/* ===== DASHBOARD GENERAL ===== */
+
+.dashboard-page {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 40px;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.5s ease;
+}
+
+.dashboard-page h2 {
+  color: var(--accent);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* ===== GRID DE TARJETAS ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  cursor: pointer;
+  background: var(--bg-hover);
+  border-radius: var(--radius);
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(96, 165, 250, 0.2);
+}
+
+.stat-icon {
+  font-size: 2.2rem;
+  animation: colorPulse 4s ease-in-out infinite;
+}
+
+.stat-card h3 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.stat-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ===== RESUMEN ===== */
+.dashboard-summary {
+  background: var(--bg-hover);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+.dashboard-summary h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.dashboard-summary p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.dashboard-summary strong {
+  color: var(--accent2);
+}
+
+/* ===== ACTIVIDAD RECIENTE ===== */
+.activity-section {
+  margin-top: 10px;
+  background: var(--bg-hover);
+  border-radius: var(--radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+
+.activity-section h3 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.activity-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  border-left: 3px solid var(--accent);
+}
+
+.activity-card:hover {
+  background: var(--bg-hover);
+  border-left-color: var(--accent2);
+}
+
+.activity-icon {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-top: 3px;
+}
+
+.activity-details h4 {
+  color: var(--text);
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.activity-details p {
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.activity-details span {
+  color: var(--accent2);
+  font-size: 0.8rem;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* animación de color en íconos */
+@keyframes colorPulse {
+  0% {
+    color: var(--accent);
+  }
+  50% {
+    color: var(--accent2);
+  }
+  100% {
+    color: var(--accent);
+  }
+}

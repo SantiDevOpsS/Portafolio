@@ -1,0 +1,40 @@
+.page {
+  background: #1e1e2e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.page h2 {
+  color: #66ccff;
+  margin-bottom: 15px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-card {
+  background: #232338;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background: #2a2a42;
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  color: #66ccff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95em;
+}

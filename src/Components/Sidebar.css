@@ -1,0 +1,26 @@
+.sidebar {
+  width: 220px;
+  background: #1e1e2e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #66ccff;
+}
+
+.sidebar nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #66ccff;
+}
